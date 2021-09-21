@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="css/global-style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Manrope"
+    />
+    <link rel="stylesheet" href="./css/timeline.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,7 +26,7 @@
   <body>
     <header>
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button
@@ -86,5 +92,59 @@
         </nav>
       </div>
     </header>
+    <main>
+      <section>
+        <div class="front-page">
+          <h2>wow</h2>
+          <script src="scripts/timelineElement.js"></script>
+          <time-line></time-line>
+        </div>
+      </section>
+      <div class="main-timeline">
+        <div class="timeline">
+          <div class="icon"></div>
+          <div class="date-content">
+            <div class="date-outer">
+              <span class="date">
+                <span class="month">2 Years</span>
+                <span class="year">2013</span>
+              </span>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <h5 class="title">Visual Art &amp; Design</h5>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
+              volutpat. Aenean interdum finibus efficitur. Praesent dapibus
+              dolor felis, eu ultrices elit molestie.
+            </p>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="icon"></div>
+          <div class="date-content">
+            <div class="date-outer">
+              <span class="date">
+                <span class="month">1 Years</span>
+                <span class="year">2015</span>
+              </span>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <h5 class="title">Product Designer</h5>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
+              volutpat. Aenean interdum finibus efficitur. Praesent dapibus
+              dolor felis, eu ultrices elit molestie.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright 2021</p>
+    </footer>
   </body>
 </html>
