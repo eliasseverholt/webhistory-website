@@ -22,10 +22,12 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="scripts/timelineElement.js"></script>
+    <script src="scripts/timelineContainer.js"></script>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <nav class="navbar navbar-expand-sm navbar-light bg-light px-sm-4">
         <a class="navbar-brand" href="#">Webbhistory</a>
         <button
           class="navbar-toggler"
@@ -54,7 +56,12 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <timeline-container>
+        <time-line title="Titele"></time-line>
+        <time-line title="lol"></time-line>
+      </timeline-container>
+    </main>
     <footer></footer>
   </body>
 </html>
