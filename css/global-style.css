@@ -6,6 +6,14 @@
   height: 95vh;
 }
 
+main div {
+  /*background-color: white;*/
+}
+
 footer {
   text-align: center;
+  bottom: 0px;
+  height: 80px;
+  position: sticky;
+  z-index: -1;
 }
