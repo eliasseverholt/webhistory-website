@@ -1,14 +1,13 @@
 class TimeLine extends HTMLElement {
   connectedCallback() {
-    let element = document.createElement("div")
-    element.innerHTML = `
+    this.innerHTML = `
         <div class="timeline">
           <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
               <span class="date">
                 <span class="month">2 Years</span>
-                <span class="year">2013</span>
+                <span class="year">${this.getAttribute("year")}</span>
               </span>
             </div>
           </div>
@@ -20,8 +19,8 @@ class TimeLine extends HTMLElement {
           </div>
         </div>
         `
-    this.insertAdjacentElement("beforeend", element)
+    this.setAttribute("class", "timeline")
   }
 }
 
-customElements.define("time-line", TimeLine)
+customElements.define("timeline-element", TimeLine)
