@@ -3,7 +3,8 @@
 }
 
 .front-page {
-  height: 95vh;
+  /*height: 95vh;
+  background-color: white;*/
 }
 
 main div {
@@ -11,9 +12,22 @@ main div {
 }
 
 footer {
-  text-align: center;
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto 300px auto;
   bottom: 0px;
-  height: 80px;
+  height: 60px;
   position: sticky;
   z-index: -1;
+}
+
+footer-text {
+  grid-column: 2;
+  margin: auto;
+}
+
+.timeline-background {
+  /*background-image: url("../img/code_programming_symbols_140997_3840x2400.jpg");
+  background-size: contain;*/
+  background-color: white;
 }
