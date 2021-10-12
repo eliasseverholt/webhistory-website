@@ -3,8 +3,12 @@
 }
 
 .front-page {
-  /*height: 95vh;
-  background-color: white;*/
+  height: 95vh;
+  background-color: white;
+}
+
+.timeline-title {
+  text-align: center;
 }
 
 main div {

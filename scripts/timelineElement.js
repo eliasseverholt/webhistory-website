@@ -1,12 +1,23 @@
+const startDate = new Date("1970")
+
 class TimeLine extends HTMLElement {
   connectedCallback() {
+    let text = this.children
+    console.log(text)
     this.innerHTML = `
         <div class="timeline">
           <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
               <span class="date">
-                <span class="month">2 Years</span>
+                <span class="month">${
+                  this.getAttribute("year") !== "Today"
+                    ? (
+                        parseInt(this.getAttribute("year")) -
+                        startDate.getFullYear()
+                      ).toString()
+                    : new Date().getFullYear() - startDate.getFullYear()
+                } Years</span>
                 <span class="year">${this.getAttribute("year")}</span>
               </span>
             </div>
@@ -14,7 +25,7 @@ class TimeLine extends HTMLElement {
           <div class="timeline-content">
             <h5 class="title">${this.getAttribute("title")}</h5>
             <p class="description">
-              LOREM IPSUM
+                ${text}
             </p>
           </div>
         </div>

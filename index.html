@@ -31,19 +31,30 @@
       <menu-element active="Timeline"></menu-element>
     </header>
     <main>
-      <div class="front-page"></div>
+      <div class="container-fluid front-page">
+        <a href="#timeline" role="button" class="btn btn-primary">
+          Take me to the timeline!
+        </a>
+      </div>
+      <div class="container-fluid">
+        <h2 class="timeline-title" id="timeline">
+          The history of webdevelopment
+        </h2>
+      </div>
       <div class="timeline-background">
         <div class="main-timeline">
-          <timeline-element title="Titel 1" year="2003"></timeline-element>
-          <timeline-element title="Titel 2" year="2004"></timeline-element>
-          <timeline-element title="Titel 1" year="2003"></timeline-element>
-          <timeline-element title="Titel 2" year="2004"></timeline-element>
-          <timeline-element title="Titel 1" year="2003"></timeline-element>
-          <timeline-element title="Titel 2" year="2004"></timeline-element>
-          <timeline-element title="Titel 1" year="2003"></timeline-element>
-          <timeline-element title="Titel 2" year="2004"></timeline-element>
-          <timeline-element title="Titel 1" year="2003"></timeline-element>
-          <timeline-element title="Titel 2" year="2004"></timeline-element>
+          <timeline-element title="Titel 1" year="2003">Text</timeline-element>
+          <timeline-element title="Titel 2" year="2004"
+            >some-text</timeline-element
+          >
+          <timeline-element title="Titel 1" year="2006"></timeline-element>
+          <timeline-element title="Titel 2" year="2007"></timeline-element>
+          <timeline-element title="Titel 1" year="2008"></timeline-element>
+          <timeline-element title="Titel 2" year="2010"></timeline-element>
+          <timeline-element title="Titel 1" year="2015"></timeline-element>
+          <timeline-element title="Titel 2" year="2016"></timeline-element>
+          <timeline-element title="Titel 1" year="2020"></timeline-element>
+          <timeline-element title="Titel 2" year="Today"></timeline-element>
         </div>
       </div>
     </main>
