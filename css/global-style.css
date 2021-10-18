@@ -11,10 +11,6 @@
   text-align: center;
 }
 
-main div {
-  /*background-color: white;*/
-}
-
 footer {
   background-color: white;
   display: grid;
@@ -33,5 +29,9 @@ footer-text {
 .timeline-background {
   /*background-image: url("../img/code_programming_symbols_140997_3840x2400.jpg");
   background-size: contain;*/
+  border-top: 2px;
+  border-bottom: 2px;
+  padding-top: 30px;
+  border-style: solid none;
   background-color: white;
 }

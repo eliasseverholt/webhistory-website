@@ -2,8 +2,7 @@ const startDate = new Date("1970")
 
 class TimeLine extends HTMLElement {
   connectedCallback() {
-    let text = this.children
-    console.log(text)
+    console.log(this.textContent)
     this.innerHTML = `
         <div class="timeline">
           <div class="icon"></div>
@@ -25,7 +24,7 @@ class TimeLine extends HTMLElement {
           <div class="timeline-content">
             <h5 class="title">${this.getAttribute("title")}</h5>
             <p class="description">
-                ${text}
+              ${this.textContent}
             </p>
           </div>
         </div>
