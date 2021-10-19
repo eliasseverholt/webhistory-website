@@ -62,21 +62,21 @@ class MenuElement extends HTMLElement {
                   this.getAttribute("active") === "Timeline"
                     ? "active"
                     : undefined
-                }" href="/index.html#">Timeline</a>
+                }" href="/index.html#">Tidslinje</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link ${
                   this.getAttribute("active") === "Impact"
                     ? "active"
                     : undefined
-                }" href="/impact.html">Impact</a>
+                }" href="/impact.html">Påverkan</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link ${
                   this.getAttribute("active") === "Security"
                     ? "active"
                     : undefined
-                }" href="/security.html">Security & Privacy</a>
+                }" href="/security.html">Säkerhet & Integritet</a>
               </li>
             </ul>
           </div>
