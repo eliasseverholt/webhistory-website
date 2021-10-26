@@ -1,4 +1,4 @@
-const startDate = new Date("1970")
+const startDate = new Date("1989")
 
 class TimeLine extends HTMLElement {
   connectedCallback() {
@@ -10,13 +10,13 @@ class TimeLine extends HTMLElement {
             <div class="date-outer">
               <span class="date">
                 <span class="month">${
-                  this.getAttribute("year") !== "Today"
+                  this.getAttribute("year") !== "Idag"
                     ? (
                         parseInt(this.getAttribute("year")) -
                         startDate.getFullYear()
                       ).toString()
                     : new Date().getFullYear() - startDate.getFullYear()
-                } Years</span>
+                } År</span>
                 <span class="year">${this.getAttribute("year")}</span>
               </span>
             </div>

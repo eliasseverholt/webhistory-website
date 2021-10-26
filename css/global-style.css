@@ -35,3 +35,7 @@ footer-text {
   border-style: solid none;
   background-color: white;
 }
+
+.text-align-center {
+  text-align: center;
+}
