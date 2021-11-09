@@ -2,7 +2,7 @@ class MenuElement extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `<nav class="navbar navbar-expand-sm navbar-light bg-light px-sm-4">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html#">Webbhistory</a>
+          <a class="navbar-brand" href="/index.html#">Webbhistoria</a>
           <button
             class="navbar-toggler"
             type="button"
