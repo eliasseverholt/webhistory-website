@@ -72,3 +72,26 @@ footer-text {
   grid-column: 2;
   width: min(45em, 100%);
 }
+
+.index-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/bb2000.jpg);
+  position: relative;
+}
+
+@media only screen and (min-width: 600px) {
+  /*Desktop & Tablet*/
+  .index-background div {
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+  }
+}
+
+.index-background div {
+  margin: auto;
+}
+
+.index-background div h1 {
+  color: white;
+}
