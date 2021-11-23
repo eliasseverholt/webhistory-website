@@ -66,6 +66,12 @@ footer-text {
   margin: 0px 15px;
 }
 
+.blog-container h5 {
+  overflow: hidden;
+  grid-column: 2;
+  margin: 0px 15px;
+}
+
 .blog-container img {
   display: block;
   margin: 0 auto;
