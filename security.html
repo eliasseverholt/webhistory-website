@@ -23,6 +23,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="scripts/menuElement.js"></script>
+    <script src="scripts/footerElement.js" defer></script>
   </head>
   <body>
     <header>
@@ -32,27 +33,88 @@
       <div class="blog-container">
         <h1>Säkerhet och Integritet på webben</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
-          recusandae dignissimos alias earum iste voluptatum consequuntur qui
-          asperiores sed illo reiciendis, quam rerum adipisci repellat beatae
-          aspernatur ea est quas.
+          Säkerhet är kritiskt att ha när man är på webben. Både som
+          administratör men även som individ. På webben har vi vår identitet och
+          utan säkerhet så skulle vår identitet kunna bli kapad i form av
+          lösenord, email, med flera. Därför krävs flera olika åtgärder för att
+          öka säkerheten som både användaren men även webbsidan måste hålla sig
+          till.
         </p>
-        <h2>Subtitle</h2>
+        <h2>Cross Site Scripting</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
-          recusandae dignissimos alias earum iste voluptatum consequuntur qui
-          asperiores sed illo reiciendis, quam rerum adipisci repellat beatae
-          aspernatur ea est quas.
+          Cross Site Scripting eller XSS i förkortad form är ett sätt som
+          hackare kan injicera farlig kod i en betrodd sida. Webbläsaren kommer
+          inte kunna veta om det användaren sätter in i olika fält eller
+          liknande är farligt innehåll eller inte. På så sätt så kan hackaren
+          skriva en sträng kod och när denna kod visas av hemsidan så kommer
+          andra webbläsare tro att koden är från den betrodda sidan och köra
+          den. Ett bra exempel på detta är när Twitter utsattes för det år 2014.
+          Det var en person som tweetade ett skript. Detta skript gjorde att
+          tweeten retweetades utan att man tröck på knappen, det hände
+          automatiskt så fort du såg tweeten. Denna tweet retweetades över
+          83,000 gånger och retweetades även av populära nyhets konton och
+          liknande.
         </p>
-        <img src="img/code_programming_symbols_140997_3840x2400.jpg" />
-        <h2>SHA-256 Kryptering</h2>
+        <img
+          src="https://www.zdnet.com/a/img/resize/114ab2dcaf6069389d9b448e3c2a6c6cf57f7bfe/2014/10/02/b1ac71c2-49e6-11e4-b6a0-d4ae52e95e57/tweetdeck-hacked.png?width=770&fit=bounds&auto=webp"
+          alt="Twitter XSS Post"
+        />
+        <h2>Hashning</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolore
-          laboriosam atque ab officiis, amet sed. Accusamus fuga quibusdam
-          laudantium!
+          Man kan minska chansen för att kapa lösenord genom att hasha
+          lösenorden. När man skapar ett lösenord så kommer lösenordet att gå
+          igenom en hash funktion som gör lösenordet till en vad som ser ut som
+          en slumpmässig sträng. Denna funktionen är gjord på ett sådant sätt
+          att man inte ska kunna göra det omvänt, alltså sätta in den hashade
+          strängen och få ut ett lösenord utan det går bara en väg. På det
+          sättet så kan man alltså lagra lösenord i en databas utan att vara
+          orolig att om någon kommer kunna läsa av lösenorden i databasen.
+          Däremot har hackare oftast en lång lösenordslista av de mest populära
+          lösenorden och en hash ekvivalent sträng. På så sätt så vet de redan
+          hashen och jämför populära lösenord med en utsatt databas. Genom att
+          så kallat salta hashen så kan man skapa en hash som inte är lik den
+          originella hashen och på så sätt göra hackarnas ordlistor ineffektiva.
+          Man saltar hashen genom att lägga till lite extra tecken på lösenordet
+          och på så sätt så får man en helt annan hash sträng. Den mest populära
+          hash funktionen är SHA-2 som står för Secure Hash Algorithm.
         </p>
         <img
           src="https://www.researchgate.net/profile/Somitra-Sanadhya/publication/220335111/figure/fig1/AS:394006216364054@1470949810821/Round-function-of-SHA-256-hash-function.png"
+          alt="SHA-256 Diagram"
+        />
+        <h2>GDPR</h2>
+        <p>
+          General Data Protection Regulation är något som har tillkommit under
+          senare år. Denna regulationen gör så att man har kontroll över sin
+          användardata. Du kan både förfråga företag och sidor om att få se din
+          data och även ta bort all din data om du nu skulle vilja göra det. Det
+          är även en standard över hela Europa kring hur man lagrar datan och
+          hur den ska användas. Man måste till exempel se till att datan är rätt
+          och man måste skydda användar datan på ett lämpligt sätt.
+        </p>
+        <img
+          src="https://149539660.v2.pressablecdn.com/wp-content/uploads/2020/06/gdpr-flag.png"
+          alt="GDPR"
+        />
+        <h2>Open Source</h2>
+        <p>
+          Om man vill så kan man publicera sin kod som Öppen Källkod vilket gör
+          att vem som helst kan ladda ned koden och modifiera den till deras
+          vilja. Det är oftast enklast att använda sig av någons annan kod när
+          man utvecklar för att minska utvecklingstiden och även i många fall
+          öka säkerheten då dessa program har setts över av flera programmerare
+          som kan kontribuera till källkoden genom att modifiera den. Däremot så
+          kan det finnas personer som vill illa och installera en så kallad back
+          door i källkoden, detta kan göras av till exempel ägaren av källkoden.
+          Bakdörren kan göra att attackeraren får tillgång till datorn eller
+          sidan som källkoden körs på och på så sätt så kompromissar det
+          säkerheten. Eftersom det är öppen källkod så kan man alltid kolla
+          igenom koden innan man använder den för att bekräfta att det inte
+          finns någon skadlig kod i källkoden.
+        </p>
+        <img
+          src="https://i2.wp.com/www.novicus.com/wp-content/uploads/2016/08/Linux-logo-without-version-number-banner-sized.jpg?ssl=1"
+          alt="Linux Logo"
         />
       </div>
     </main>
